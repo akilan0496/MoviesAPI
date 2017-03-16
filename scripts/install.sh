@@ -21,6 +21,10 @@ echo "install.sh step4"
 
 apt-get -y install nodejs
 
+apt install nodejs-legacy
+
+apt install npm
+
 echo "install.sh step5"
 # install pm2 module globaly
 
