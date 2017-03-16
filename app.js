@@ -7,7 +7,7 @@ var userRoutes = require('./routes/users');
 
 var app = express();
 
-//connecting to the database
+//connecting to the database yes
 var connectionString = 'mongodb://localhost:27017/moviesDB';
 mongoose.connect(connectionString);
 
