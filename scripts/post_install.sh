@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 echo "post-install.sh started"
-set -e
 
 echo "post-install.sh step1"
 cd ~/node
