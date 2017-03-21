@@ -7,6 +7,14 @@ var userRoutes = require('./routes/users');
 
 var app = express();
 
+app.use(function(req, res, next) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    res.setHeader('Access-Control-Allow-Methods', 'DELETE, GET, POST, PUT');
+    res.setHeader('Cache-Control', 'no-cache');
+    next();
+});
+
 //connecting to the database yes
 var connectionString = 'mongodb://localhost:27017/moviesDB';
 mongoose.connect(connectionString);
